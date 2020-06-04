@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Table2Table.Models.Restaurant>
+
+@{
+    ViewBag.Title = "Table2Table";
+}
+
+<div class="container section" id="restaurantsByType">
+    @foreach (var restaurant in Model)
+    {
+        <div class="card horizontal medium">
+            <div class="card-image">
+                <img src="https://baconmockup.com/500/500">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <span class="card-title">@restaurant.ID. @restaurant.Title</span>
+                    <p>
+                        @restaurant.Description
+                    </p>
+                    <br />
+                    <a href="#">@restaurant.IsType</a>
+                    <br />
+                    <a href="#">(sterren)</a>
+                </div>
+                <div class="card-action">
+                    @Html.ActionLink("Bekijk restaurant", "../Restaurant/Details", new { id = restaurant.ID })
+                </div>
+            </div>
+        </div>
+    }
+</div>

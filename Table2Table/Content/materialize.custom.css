@@ -1,0 +1,28 @@
+.icon_style {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.carousel-item .carousel-item-content {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+#loginForm, #registerForm {
+    padding: 3.15rem 2rem;
+}

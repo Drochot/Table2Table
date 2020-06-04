@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Table2Table", "Table2Table\Table2Table.csproj", "{E8274877-30E2-47F5-A4C9-B8693D3AC9DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8274877-30E2-47F5-A4C9-B8693D3AC9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8274877-30E2-47F5-A4C9-B8693D3AC9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8274877-30E2-47F5-A4C9-B8693D3AC9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8274877-30E2-47F5-A4C9-B8693D3AC9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2106420-BBC0-42D5-921A-A96097A0503E}
+	EndGlobalSection
+EndGlobal

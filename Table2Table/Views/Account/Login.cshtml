@@ -1,0 +1,45 @@
+﻿@using Table2Table.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+
+<section id="loginForm">
+    <div class="container">
+        <h2>@ViewBag.Title.</h2>
+        <div class="card">
+            <div class="card-content">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    @Html.ValidationSummary(true, "", new { @class = "helper-text" })
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "validate" })
+                        @Html.LabelFor(m => m.Email)
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "helper-text" })
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock</i>
+                        @Html.PasswordFor(m => m.Password, new { @class = "validate" })
+                        @Html.LabelFor(m => m.Password)
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "helper-text" })
+                    </div>
+                    <div class="input-field">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">
+                            Log in
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                }
+            </div>
+            <div class="card-action">
+                @Html.ActionLink("Register as a new user", "Register")
+                @Html.ActionLink("Forgot your password?", "ForgotPassword")
+            </div>
+        </div>
+    </div>
+</section>
